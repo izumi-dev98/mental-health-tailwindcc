@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mental Health</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4vj1io8dO6l5p+5l9X+Y2F5R6NRUjJYqZ+h0GG3uB2UlV9z2T5FQbR7Wzj+N2V6qDA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="">
+
+  <!-- Navbar -->
+  <div  class="h-screen bg-[url('./img/hero.jpg')] bg-cover bg-no-repeat">
+
+    <nav class="fixed w-screen top-0 shadow-md bg-white/30 backdrop-blur-md rounded-b-xl md:rounded-b-3xl z-50">
+      <div class="px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+
+          <!-- Logo -->
+          <div class="flex items-center gap-4">
+            <img src="./img/logo.png" alt="Logo" class="w-[50px]" />
+            <a href="#" class="text-2xl font-bold text-blue-600">Mental Health</a>
+          </div>
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-6 font-medium">
+            <a href="#" class="text-gray-700 hover:text-blue-600 transition duration-300 hover:scale-110">Home</a>
+            <a href="#abouts" class="text-gray-700 hover:text-blue-600 transition duration-300 hover:scale-110">About</a>
+            <a href="#" class="text-gray-700 hover:text-blue-600 transition duration-300 hover:scale-110">Services</a>
+            <a href="#" class="text-gray-700 hover:text-blue-600 transition duration-300 hover:scale-110">Contact</a>
+            <a href="#" class="text-gray-700 hover:text-blue-600 transition duration-300 hover:scale-110">
+              <i class="fa-solid fa-phone"></i> 0954 889 0342
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-gray-700 focus:outline-none">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-white/40 backdrop-blur-md rounded-b-xl">
+        <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+        <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
+        <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Services</a>
+        <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+        <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">
+          <i class="fa-solid fa-phone"></i> 0954 889 0342
+        </a>
+      </div>
+    </nav>
+  
+
+  <!-- Hero Section -->
+  <header class="flex flex-col justify-center h-screen text-black px-8 md:px-20 text-center">
+    <h2 data-aos="fade-down" data-aos-duration="1000" class="md:text-[100px] text-[50px] font-bold font-serif mt-40 md:mt-0">
+      Mental Health
+    </h2>
+    <p data-aos="fade-right" data-aos-duration="1000" class="max-w-lg mt-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, doloribus explicabo.
+    </p>
+    <div class="flex gap-4 mt-6 items-center text-center" data-aos="fade-up" data-aos-duration="1000">
+      <a href="#"
+        class="bg-[#D2E1E9]/80 text-gray-800 border-2 rounded-md py-2 px-4 w-[150px] md:w-[200px] text-center hover:text-blue-600 hover:border-blue-600 transition duration-200 hover:scale-105">
+        Who We Are <i class="fa-solid fa-circle-user ml-1"></i>
+      </a>
+      <a href="#"
+        class="bg-[#D2E1E9]/80 text-gray-800 border-2 rounded-md py-2 px-4 w-[150px] md:w-[200px] text-center hover:text-blue-600 hover:border-blue-600 transition duration-200 hover:scale-105">
+        Our Service <i class="fa-solid fa-heart ml-1"></i>
+      </a>
+    </div>
+  </header>
+
+  </div>
+
+  <!-- About Us Section -->
+  <section class="md:px-20 px-8" id="abouts">
+    <div class="flex flex-col md:flex-row justify-between gap-10 mt-[5%]">
+
+      <!-- Left Grid Photos -->
+      <div class="grid grid-cols-2 gap-3 flex-1 ">
+        <img src="./img/hero.jpg" alt="Gallery 1" class="border-2 rounded-2xl" data-aos="fade-up"
+          data-aos-duration="800">
+        <img src="./img/hero.jpg" alt="Gallery 2" class="border-2 rounded-2xl" data-aos="fade-up"
+          data-aos-duration="900">
+        <img src="./img/hero.jpg" alt="Gallery 3" class="border-2 rounded-2xl" data-aos="fade-up"
+          data-aos-duration="1000">
+        <img src="./img/hero.jpg" alt="Gallery 4" class="border-2 rounded-2xl" data-aos="fade-up"
+          data-aos-duration="1100">
+        <div class="col-span-2 mt-3 p-3 bg-[#D2E1E9]/50 rounded-xl text-center shadow">
+          <h6 class="font-bold mb-1 text-lg">50,000+ Lives Impacted</h6>
+          <p class="text-gray-700 text-sm">Supporting mental wellness with trusted care and compassion.</p>
+        </div>
+      </div>
+
+      <!-- Right Text Content -->
+      <div class="text-center md:text-left flex-1 flex flex-col justify-center order-first md:order-last mt-20 md:mt-0">
+        <h2 class="text-5xl font-bold mb-3 text-blue-700">ABOUT US</h2>
+        <p class="text-gray-700 mb-8 leading-relaxed">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consectetur beatae vitae accusamus
+          consequuntur modi, facilis impedit eveniet deleniti dolor adipisci reprehenderit eum corrupti maiores.
+        </p>
+        <a href="#"
+          class="border-2 rounded-xl py-2 px-5 w-fit mx-auto md:mx-0 hover:text-blue-600 hover:border-blue-600 transition duration-200 hover:scale-105">
+          LEARN MORE
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Placeholder -->
+  <footer class="mt-20 text-center py-6 bg-blue-50 text-gray-700">
+    <p>&copy; 2025 Mental Health. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Toggle Mobile Menu
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
